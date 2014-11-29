@@ -1,9 +1,9 @@
-package hitz.virtuozo.kickstart.ui;
+package virtuozo.kickstart.ui;
 
-import hitz.virtuozo.infra.Presenter;
-import hitz.virtuozo.infra.View;
-import hitz.virtuozo.kickstart.ui.HomePagePresenter.HomeView;
-import hitz.virtuozo.kickstart.ui.pages.HomePage;
+import virtuozo.infra.Presenter;
+import virtuozo.infra.View;
+import virtuozo.kickstart.ui.HomePagePresenter.HomeView;
+import virtuozo.kickstart.ui.pages.HomePage;
 
 public class HomePagePresenter extends Presenter<HomeView>{
   private static final HomePagePresenter instance = new HomePagePresenter(new HomePage());

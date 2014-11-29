@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>hitz</groupId>
-  <artifactId>kick-start</artifactId>
+  <groupId>com.github.virtuozo</groupId>
+  <artifactId>kickstart</artifactId>
   <version>1.0.0</version>
   <name>Virtuozo Kick Start Project</name>
   <packaging>war</packaging>
@@ -12,7 +12,7 @@
     <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.compiler.version>1.6</java.compiler.version>
-    <main.package>hitz.virtuozo.kickstart</main.package>
+    <main.package>virtuozo.kickstart</main.package>
     
     <!-- GWT Properties -->
     <gwt.version>2.6.1</gwt.version>
@@ -27,8 +27,8 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>hitz</groupId>
-        <artifactId>virtuozo</artifactId>
+        <groupId>com.github.virtuozo</groupId>
+        <artifactId>parent</artifactId>
         <version>1.0.0</version>
         <type>pom</type>
         <scope>import</scope>
@@ -59,38 +59,38 @@
 
     <!-- virtuozo Dependencies -->
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-bootstrap</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>bootstrap</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-api</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-rest-api</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>rest-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-widgets</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>widgets</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-themes</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>themes</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-core</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>core</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>hitz</groupId>
-      <artifactId>virtuozo-commons</artifactId>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>commons</artifactId>
     </dependency>
   </dependencies>
 
@@ -116,7 +116,7 @@
             <!-- Plugin configuration. There are many available options, 
               see gwt-maven-plugin documentation at codehaus.org -->
             <configuration>
-              <module>hitz.virtuozo.Kickstart</module>
+              <module>com.github.virtuozo.virtuozo.Kickstart</module>
               <runTarget>index.html</runTarget>
 
               <hostedWebapp>${webappDirectory}</hostedWebapp>

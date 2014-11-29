@@ -1,7 +1,7 @@
-package hitz.virtuozo.kickstart.ui.pages;
+package virtuozo.kickstart.ui.pages;
 
- import hitz.virtuozo.kickstart.ui.HomePagePresenter.HomeView;
-import hitz.virtuozo.ui.api.HasComponents;
+ import virtuozo.kickstart.ui.HomePagePresenter.HomeView;
+import virtuozo.ui.api.HasComponents;
 
 public class HomePage implements HomeView {
     @Override

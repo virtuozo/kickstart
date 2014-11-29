@@ -12,10 +12,10 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package hitz.virtuozo.kickstart.ui;
+package virtuozo.kickstart.ui;
 
-import hitz.virtuozo.showcase.i18n.Constants;
-import hitz.virtuozo.showcase.i18n.Messages;
+import virtuozo.showcase.i18n.Constants;
+import virtuozo.showcase.i18n.Messages;
 
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.resources.client.ClientBundle;

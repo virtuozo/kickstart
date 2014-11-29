@@ -1,8 +1,8 @@
-package hitz.virtuozo.kickstart.application;
+package virtuozo.kickstart.application;
 
-import hitz.virtuozo.infra.Place;
-import hitz.virtuozo.infra.Presenter;
-import hitz.virtuozo.kickstart.ui.HomePagePresenter;
+import virtuozo.infra.Place;
+import virtuozo.infra.Presenter;
+import virtuozo.kickstart.ui.HomePagePresenter;
 
 public enum Places implements Place {
   HOME{
