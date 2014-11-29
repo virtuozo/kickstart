@@ -41,7 +41,7 @@ public class Bundle {
   }
   
   public static interface Images extends ClientBundle{
-    @Source("hitz/virtuozo/kickstart/images/logo.jpg")
+    @Source("virtuozo/kickstart/images/logo.jpg")
     ImageResource logo();
   }
 }
