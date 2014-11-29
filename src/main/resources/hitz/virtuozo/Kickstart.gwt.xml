@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='kickstart'>
+  <inherits name='hitz.virtuozo.themes.Bootstrap' />
+  <inherits name='hitz.virtuozo.themes.FontAwesome' />
+  <inherits name='hitz.virtuozo.themes.Glyphicons' />
+  <inherits name='hitz.virtuozo.Widgets' />
+  <inherits name='hitz.virtuozo.Core' />
+
+  <source path="kickstart/ui" />
+  <source path="kickstart/infra" />
+  <source path="kickstart/application" />
+  <source path="kickstart/i18n" />
+  <public path="kickstart/css"/>
+  
+  <stylesheet src="kickstart.css"/>
+  
+  <entry-point class='hitz.virtuozo.kickstart.application.Kickstart' />
+
+  <!-- i18N configurations -->
+  <extend-property name="locale" values="en"/>
+  <set-property-fallback name="locale" value="en"/> 
+  
+  <!-- Dev Settings -->
+  <add-linker name="xsiframe"/>
+  <set-configuration-property name="devModeRedirectEnabled" value="true"/>
+  <set-property name="compiler.useSourceMaps" value="true" />
+  <collapse-all-properties />
+</module>
