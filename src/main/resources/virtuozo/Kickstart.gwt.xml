@@ -12,7 +12,7 @@
   <source path="kickstart/i18n" />
   <public path="kickstart/css"/>
   
-  <stylesheet src="kickstart.css"/>
+  <stylesheet src="site.css"/>
   
   <entry-point class='virtuozo.kickstart.application.Kickstart' />
 

@@ -14,8 +14,8 @@
  */
 package virtuozo.kickstart.ui;
 
-import virtuozo.showcase.i18n.Constants;
-import virtuozo.showcase.i18n.Messages;
+import virtuozo.kickstart.i18n.Constants;
+import virtuozo.kickstart.i18n.Messages;
 
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.resources.client.ClientBundle;
@@ -41,7 +41,7 @@ public class Bundle {
   }
   
   public static interface Images extends ClientBundle{
-    @Source("virtuozo/kickstart/images/logo.jpg")
+    @Source("virtuozo/kickstart/images/logo.png")
     ImageResource logo();
   }
 }
