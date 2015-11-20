@@ -1,7 +1,7 @@
 package virtuozo.kickstart.application;
 
 import virtuozo.infra.Presenter;
-import virtuozo.infra.interfaces.Place;
+import virtuozo.interfaces.Place;
 import virtuozo.kickstart.ui.HomePagePresenter;
 
 public enum Places implements Place {

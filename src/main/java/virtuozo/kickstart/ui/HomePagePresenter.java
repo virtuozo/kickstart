@@ -1,7 +1,7 @@
 package virtuozo.kickstart.ui;
 
 import virtuozo.infra.Presenter;
-import virtuozo.infra.interfaces.View;
+import virtuozo.interfaces.View;
 import virtuozo.kickstart.ui.HomePagePresenter.HomeView;
 import virtuozo.kickstart.ui.pages.HomePage;
 
