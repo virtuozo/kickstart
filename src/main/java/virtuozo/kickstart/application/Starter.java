@@ -5,7 +5,7 @@ import virtuozo.ui.HTML;
 
 import com.google.gwt.core.client.EntryPoint;
 
-public class Kickstart implements EntryPoint {
+public class Starter implements EntryPoint {
   
   @Override
   public void onModuleLoad() {

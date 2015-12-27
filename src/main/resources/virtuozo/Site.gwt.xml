@@ -14,7 +14,7 @@
   
   <stylesheet src="site.css"/>
   
-  <entry-point class='virtuozo.kickstart.application.Kickstart' />
+  <entry-point class='virtuozo.kickstart.application.Starter' />
 
   <!-- i18N configurations -->
   <extend-property name="locale" values="en"/>

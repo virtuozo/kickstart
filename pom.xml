@@ -21,7 +21,7 @@
     <gwt.version>2.7.0</gwt.version>
     <gwt.style>OBF</gwt.style> <!-- OBF[USCATED], PRETTY, DETAILED default: OBF -->
     <messages.bundle>${main.package}.i18n.Messages</messages.bundle>
-    <constants.bundle>${main.package}.i18n.Constants</constants.bundle>
+    <constants.bundle>${main.package}.i18n.Words</constants.bundle>
     <log.level>INFO</log.level>
     <optimization.level>9</optimization.level>
     <local.workers>2</local.workers>
@@ -44,19 +44,16 @@
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
-      <version>5.0.3</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-util</artifactId>
-      <version>5.0.3</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm-commons</artifactId>
-      <version>5.0.3</version>
       <scope>provided</scope>
     </dependency>
     
@@ -86,7 +83,7 @@
     </dependency>
     <dependency>
       <groupId>com.github.virtuozo</groupId>
-      <artifactId>rest-api</artifactId>
+      <artifactId>http-api</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
