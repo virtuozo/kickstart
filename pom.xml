@@ -13,7 +13,7 @@
     <main.package>virtuozo.kickstart</main.package>
     <module>virtuozo.Kickstart</module>
     <web.target>${webappDirectory}/target/kickstart</web.target>
-    
+
     <!-- Standard Properties -->
     <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -56,14 +56,14 @@
       <artifactId>asm-commons</artifactId>
       <scope>provided</scope>
     </dependency>
-    
+
     <!-- GWT -->
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
       <scope>provided</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>javax.validation</groupId>
       <artifactId>validation-api</artifactId>
@@ -107,47 +107,6 @@
     </dependency>
   </dependencies>
 
-  <profiles>
-    <profile>
-      <id>gwt</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>gwt-maven-plugin</artifactId>
-            <version>${gwt.version}</version>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>compile</goal>
-                  <goal>test</goal>
-                  <goal>i18n</goal>
-                  <goal>generateAsync</goal>
-                </goals>
-              </execution>
-            </executions>
-            <!-- Plugin configuration. There are many available options, 
-              see gwt-maven-plugin documentation at codehaus.org -->
-            <configuration>
-              <module>${module}</module>
-              <runTarget>index.html</runTarget>
-
-              <hostedWebapp>${webappDirectory}</hostedWebapp>
-              <warSourceDirectory>${web.target}</warSourceDirectory>
-              <style>${gwt.style}</style>
-              <i18nMessagesBundle>${messages.bundle}</i18nMessagesBundle>
-              <i18nConstantsWithLookupBundle>${constants.bundle}</i18nConstantsWithLookupBundle>
-              <localWorkers>2</localWorkers>
-              <logLevel>${log.level}</logLevel>
-              <optimizationLevel>${optimization.level}</optimizationLevel>
-              <extraJvmArgs>-XX:MaxPermSize=1024m -Xms512m -Xmx2048m</extraJvmArgs>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
-
   <build>
     <finalName>kickstart</finalName>
 
@@ -179,6 +138,38 @@
               </includes>
             </resource>
           </webResources>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>${gwt.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>test</goal>
+              <goal>i18n</goal>
+              <goal>generateAsync</goal>
+            </goals>
+          </execution>
+        </executions>
+        <!-- Plugin configuration. There are many available options, see 
+          gwt-maven-plugin documentation at codehaus.org -->
+        <configuration>
+          <module>${module}</module>
+          <runTarget>index.html</runTarget>
+
+          <hostedWebapp>${webappDirectory}</hostedWebapp>
+          <warSourceDirectory>${web.target}</warSourceDirectory>
+          <style>${gwt.style}</style>
+          <i18nMessagesBundle>${messages.bundle}</i18nMessagesBundle>
+          <i18nConstantsWithLookupBundle>${constants.bundle}</i18nConstantsWithLookupBundle>
+          <localWorkers>2</localWorkers>
+          <logLevel>${log.level}</logLevel>
+          <optimizationLevel>${optimization.level}</optimizationLevel>
+          <extraJvmArgs>-XX:MaxPermSize=1024m -Xms512m -Xmx2048m</extraJvmArgs>
         </configuration>
       </plugin>
 

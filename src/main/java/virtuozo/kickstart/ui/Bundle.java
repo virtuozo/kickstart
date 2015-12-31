@@ -14,8 +14,8 @@
  */
 package virtuozo.kickstart.ui;
 
-import virtuozo.kickstart.i18n.Constants;
 import virtuozo.kickstart.i18n.Messages;
+import virtuozo.kickstart.i18n.Words;
 
 import com.google.gwt.core.shared.GWT;
 import com.google.gwt.resources.client.ClientBundle;
@@ -24,11 +24,11 @@ import com.google.gwt.resources.client.ImageResource;
 public class Bundle {
   private static final Images images = GWT.create(Images.class);
   
-  private static final Constants constants = GWT.create(Constants.class);
+  private static final Words constants = GWT.create(Words.class);
   
   private static final Messages messages = GWT.create(Messages.class);
   
-  public static Constants constants() {
+  public static Words constants() {
     return constants;
   }
   
