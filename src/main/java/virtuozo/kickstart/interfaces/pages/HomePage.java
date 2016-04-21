@@ -1,16 +1,16 @@
-package virtuozo.kickstart.ui.pages;
+package virtuozo.kickstart.interfaces.pages;
 
-import virtuozo.kickstart.ui.HomePagePresenter.HomeView;
-import virtuozo.ui.FontAwesome;
-import virtuozo.ui.HeroPageLayout;
-import virtuozo.ui.IconifiedList;
-import virtuozo.ui.Navbar;
-import virtuozo.ui.Paragraph;
-import virtuozo.ui.Row;
-import virtuozo.ui.Row.Column;
-import virtuozo.ui.ViewPort;
-import virtuozo.ui.css.BackgroundColor;
-import virtuozo.ui.interfaces.HasComponents;
+import virtuozo.interfaces.FontAwesome;
+import virtuozo.interfaces.HasComponents;
+import virtuozo.interfaces.HeroPageLayout;
+import virtuozo.interfaces.IconifiedList;
+import virtuozo.interfaces.Navbar;
+import virtuozo.interfaces.Paragraph;
+import virtuozo.interfaces.Row;
+import virtuozo.interfaces.ViewPort;
+import virtuozo.interfaces.Row.Column;
+import virtuozo.interfaces.css.BackgroundColor;
+import virtuozo.kickstart.interfaces.HomePagePresenter.HomeView;
 
 public class HomePage implements HomeView {
   private HeroPageLayout layout = HeroPageLayout.create();
@@ -39,9 +39,14 @@ public class HomePage implements HomeView {
     list.addItem().icon(FontAwesome.CHECK).text("Use the web browser to see the web page");
     list.addItem().icon(FontAwesome.CHECK).text("You can also use jetty plugin to run the compiled version using mvn jetty:run -P gwt");
   }
+  
+  @Override
+  public void bind() {
+    
+  }
 
   @Override
-  public void detach() {
+  public void unbind() {
 
   }
 }

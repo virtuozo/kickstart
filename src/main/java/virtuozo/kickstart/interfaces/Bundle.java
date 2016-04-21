@@ -12,7 +12,7 @@
  * or implied. See the License for the specific language governing permissions and limitations under
  * the License.
  */
-package virtuozo.kickstart.ui;
+package virtuozo.kickstart.interfaces;
 
 import virtuozo.kickstart.i18n.Messages;
 import virtuozo.kickstart.i18n.Words;

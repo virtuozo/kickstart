@@ -12,7 +12,7 @@
     <!-- Edit here -->
     <main.package>virtuozo.kickstart</main.package>
     <module>virtuozo.Kickstart</module>
-    <web.target>${webappDirectory}/target/kickstart</web.target>
+    <web.target>${webappDirectory}/target/www</web.target>
 
     <!-- Standard Properties -->
     <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
@@ -108,7 +108,7 @@
   </dependencies>
 
   <build>
-    <finalName>kickstart</finalName>
+    <finalName>www</finalName>
 
     <!-- Generate compiled stuff in the folder used for developing mode -->
     <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>

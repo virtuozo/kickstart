@@ -1,7 +1,7 @@
 package virtuozo.kickstart.application;
 
 import virtuozo.infra.Historian;
-import virtuozo.ui.HTML;
+import virtuozo.interfaces.HTML;
 
 import com.google.gwt.core.client.EntryPoint;
 
