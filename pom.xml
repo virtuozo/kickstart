@@ -11,10 +11,10 @@
   <properties>
     <!-- Edit here -->
     <main.package>virtuozo.kickstart</main.package>
-    <module>virtuozo.Kickstart</module>
-    <web.target>${webappDirectory}/target/www</web.target>
+    <module>virtuozo.Site</module>
 
     <!-- Standard Properties -->
+    <web.target>${webappDirectory}/target/www</web.target>
     <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.compiler.version>1.6</java.compiler.version>
@@ -79,6 +79,11 @@
     <dependency>
       <groupId>com.github.virtuozo</groupId>
       <artifactId>api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.virtuozo</groupId>
+      <artifactId>animate</artifactId>
       <scope>provided</scope>
     </dependency>
     <dependency>
